@@ -86,4 +86,14 @@ Should you use \n or std::endl at the end?
 	•	You’re debugging and want to ensure everything prints before a crash or freeze
 
 
+	 std::cout<<"Enter no.:"<<std::flush; 
+because we do not want the output to be taken in new line but we want to flush the output buffer.
+🧠 What does “flushes the buffer” mean?
+In C++, when you write to std::cout, it doesn’t immediately show up on the screen.
+Instead, it goes into an output buffer — a temporary memory area.
+🔄 “Flushing the buffer” means:
+Forcing all the buffered output to be sent to the display (or terminal) immediately.
+So yes:
+✅ The output is flushed onto the display (screen).
+
 */
