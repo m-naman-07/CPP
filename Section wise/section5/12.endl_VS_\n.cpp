@@ -58,4 +58,32 @@
 	•	or during debugging
 
 
+
+You’re outputting a final message like:
+		if(factorcount == 2) {
+    		std::cout << n << " is a Prime number.";
+		}
+		else {
+   	 		std::cout << n << " is not a Prime number.";
+		}
+
+Now the question is:
+
+Should you use \n or std::endl at the end?
+
+✅ Recommended: Use \n
+		std::cout << n << " is a Prime number.\n";
+
+🔎 Why?
+	•	You are not taking input right after this.
+	•	You don’t need to force-flush the buffer.
+	•	\n is faster and better for such output.
+
+⸻
+
+🔁 Only use std::endl if:
+	•	You want the output to immediately appear before cin, or
+	•	You’re debugging and want to ensure everything prints before a crash or freeze
+
+
 */
