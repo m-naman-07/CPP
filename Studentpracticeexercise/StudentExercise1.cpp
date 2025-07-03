@@ -10,6 +10,6 @@ int main(){
 
  area=3.1425f*radius*radius;
 
- std::cout<<"Area of a Circle is "<<area<<std::endl;
+ std::cout<<"Area of a Circle is "<<area<<"\n";
 
 }
