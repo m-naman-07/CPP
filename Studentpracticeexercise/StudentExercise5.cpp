@@ -19,9 +19,9 @@ int main(){
     }
     std::cout<<"Reverse of "<< n<<" is "<<rev<<".\n";
     if(rev==n){
-        std::cout<<"Entered number is a palindrome."<<std::endl;
+        std::cout<<"Entered number is a palindrome.\n";
     }
     else{
-        std::cout<<"Entered number is not a palindrome."<<std::endl;
+        std::cout<<"Entered number is not a palindrome.\n";
     }
 }
