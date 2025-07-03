@@ -15,9 +15,9 @@ int main(){
     discount=billAmount*10/100;
     }
 
-    std::cout<<"Bill Amount is:"<<billAmount<<std::endl;
-    std::cout<<"Discount is :"<<discount<<std::endl;
-    std::cout<<"Discounted Amount is:"<<billAmount-discount<<std::endl;
+    std::cout<<"Bill Amount is:"<<billAmount<<"\n";
+    std::cout<<"Discount is :"<<discount<<"\n";
+    std::cout<<"Discounted Amount is:"<<billAmount-discount<<"\n";
 
     return 0;
 }
