@@ -1,4 +1,6 @@
 /*
+int A[]; is correct because in C and C++, when declaring an array without specifying its size, you must initialize it with values. Without a size or initialization, the declaration is considered invalid.
+
 ✅ 1. Array Declaration Without Initialization
 #include <iostream>
 int main() {
