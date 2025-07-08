@@ -12,7 +12,7 @@ int main() {
 
     c = a+b;
 
-    std::cout<<"Sum of a and b is equal to "<<c<<std::endl;
+    std::cout<<"Sum of a and b is equal to "<<c<<"\n";
 
     return 0;
 }
