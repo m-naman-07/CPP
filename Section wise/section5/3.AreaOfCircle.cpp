@@ -1,4 +1,5 @@
-/* 3.14 is treated as a double in C++.
+/* 
+    3.14 is treated as a double in C++.
     3.14f is treated as a float.
     Even if area is declared as float, using 3.14f helps the compiler perform float arithmetic, rather than mixing double and float.
     -if you write 3.14
@@ -28,5 +29,5 @@ so if you want to write 22/7 u have to use
 explicit type casting(You manually force the conversion using cast syntax)
 like (float)22/7*r*r 
 or
-you can use 22.0/7. or 22/7.0 but it will give double data type 
+you can use 22.0/7  or  22/7.0  but it will give double data type 
 */
