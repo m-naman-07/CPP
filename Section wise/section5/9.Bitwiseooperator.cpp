@@ -12,10 +12,10 @@ not as the single whole data unit
 • Its working 
 
 1. and(&)
-    bit1    bit2    bit1&bit2               Example   
-     0       0         0                        a = 0 0 0 0 0 1 0 1 (5) 
-     1       0         0                        b = 0 0 0 0 1 0 0 1 (9)
-     0       1         0                      a&b = 0 0 0 0 0 0 0 1 (1)
+    bit1    bit2    bit1&bit2             Example   
+     0       0         0                  a = 0 0 0 0 0 1 0 1 (5) 
+     1       0         0                  b = 0 0 0 0 1 0 0 1 (9)
+     0       1         0                  a&b = 0 0 0 0 0 0 0 1 (1)
      1       1         1                        
 
 2. or(|)
@@ -47,13 +47,10 @@ int x = 5 , y;
  X = 0 0 0 0 0 1 0 1
 
  0 0 0 0 0 1 0 1
-• When you shift all the bits on left hand side by one space(x<<1)then 5 will
-get multiplied by 2 , if you move them by 2 space(x<<2) it will be multiplied
-by 4 (2 to the power no. of spaces it has been shifted)
+• When you shift all the bits on left hand side by one space(x<<1)then 5 will get multiplied by 2 , if you move them by 2 space(x<<2) it will be multiplied by 4 (2 to the power no. of spaces it has been shifted)
 i.e x<<n   ->   x*(2^n)
     x>>n   ->   x/(2^n) 
-• Here signed bit is not included , if the number is positive then it will
-be positive and vice versa
+• Here signed bit is not included , if the number is positive then it will be positive and vice versa
 */
 
 /*

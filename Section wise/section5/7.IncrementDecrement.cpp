@@ -24,7 +24,7 @@ int main() {
     //these all mean the same thing
     //i = i + 1;   ->  i +=1 ;   ->   i++;
     std::cout << "Value of i increased" << std::endl;    
-    i++;
+    ++i; //alway use ++i for these type statements it is fast 
     std::cout<<i<<std::endl;
     return 0;
 }
@@ -43,11 +43,8 @@ Post dec : x++;
 
 • These variables are useful for counting as they are very common
   so c++ has introduced this concept  
-
 • This is used mostly in loops
-
-• The meaning of pre increment(++x) is, first increment the value then
-  assign the result to the variable meaning if u print the variable 
+• The meaning of pre increment(++x) is, first increment the value then assign the result to the variable.
 
 • The meaning of post increment(x++) is first assign then increment it
   the value.

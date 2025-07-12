@@ -2,8 +2,7 @@
 Overflow
 • When the value is more than the capacity it will take the values
 again from the beginning this concept is called overflow
-• Suppose there is a byte and we are already having values in it , if
-1 is added to this max byte value it becomes a signed bit
+• Suppose there is a byte and we are already having values in it , if 1 is added to this max byte value it becomes a signed bit
 therefor it become -128 magically this happens when we try
 going to the next value
 • The number we got is in twos compliment as -ve numbers are

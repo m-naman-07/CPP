@@ -3,9 +3,13 @@
 C++ program memory is typically divided into 5 segments:
 Segment                     Stores                              Example
 🔹 Stack                 Local variables, function calls        int x = 5; in main()
+
 🔸 Heap                  Dynamically allocated memory           new int[n]
+
 🟣 Static/Global         Static & global variables              static int a = 10;
+
 ⚫ Code/Text             Machine code (functions)               Compiled code itself
+
 🟢 Constants             String literals, const values          const int x = 10;
 
 🔹 1. Stack Memory
@@ -62,4 +66,8 @@ Too many or too large arrays on the stack can cause a stack overflow:
 ✅ Example:
         const int PI = 3.14;    // Read-only memory
         std::cout << "Hello";   // "Hello" stored in constant segment
+
+✅ Read-Only Section of Memory
+ - Sometimes called the Constant Segment
+ - It is marked as read-only by the OS/Compiler, but it is not actual ROM hardware
 */
