@@ -12,7 +12,7 @@ int main(){
     while(i<=n){
         if (n%i==0)
         {
-            std::cout<<"Factor "<<factorcount<<" ="<<i<<std::endl;     
+            std::cout<<"Factor "<<factorcount<<" ="<<i<<"\n";     
             ++factorcount;
         }
         ++i;

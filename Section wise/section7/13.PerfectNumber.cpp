@@ -31,7 +31,7 @@ int main(){
         }
         ++i;
     }
-    std::cout<<"Sum of Proper Factors is "<<sum<<"\n";
+    std::cout<<"Sum of Factors is "<<sum<<"\n";
     if(sum==n){
         std::cout<<n<<" is a perfect number."<<std::endl;
     }

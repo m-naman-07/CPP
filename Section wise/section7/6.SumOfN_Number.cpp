@@ -6,7 +6,7 @@ int main(){
     std::cout<<"Enter no. till where sum is req.:";
     std::cin>>n;
    
-    for( int i{};i<=n;++i)  //++i is faster than i++
+    for( int i{};i<=n;++i)  
     {
         sum+=i;
     }

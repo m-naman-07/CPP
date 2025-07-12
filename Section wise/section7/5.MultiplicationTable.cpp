@@ -7,7 +7,7 @@ int main(){
 
 
 
-    for(int i{};i<=10;++i) //++i is faster than i++
+    for(int i{};i<=10;++i)
     {
         std::cout<<n<<" * "<<i<<" = "<< n*i << std::endl;   
     }

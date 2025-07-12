@@ -16,7 +16,6 @@ int main(){
             tempn=tempn-tempm;
         }
     }
-    std::cout<<"GCD of "<<m<<" and "<<n<<" is "<< tempm<<std::endl;
+    std::cout<<"GCD of "<<m<<" and "<<n<<" is "<< tempm<<"\n";
     return 0;
-
 }

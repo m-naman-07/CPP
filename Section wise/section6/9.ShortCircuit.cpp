@@ -72,6 +72,7 @@ So basically:
 int main(){
 
     int a=10,b=5,i=5;
+    
     if(a>b && ++i<=b){
     }
     std::cout<<i<<std::endl;
@@ -81,3 +82,47 @@ int main(){
     std::cout<<i<<std::endl;
     //as first condition was true so the second statement was not checked in the above
 }
+
+/*
+🧨 Expression: if (a / 0 == 2)
+🔥 Problem:
+a / 0 is a division by zero, which is undefined behavior in C++.
+
+🔍 What will the compiler or runtime do?
+🖥️ If a is an int:
+The program will compile.
+
+But at runtime, when it executes a / 0, it will crash.
+
+You might get an error like:
+
+    Floating point exception (core dumped)
+🚨 Division by zero in integer arithmetic is not allowed and causes a runtime error.
+
+❗ Important Note:
+Even if it's inside an if condition, the expression:
+
+    if (a / 0 == 2)
+still requires evaluating a / 0, which must be done before checking the condition.
+
+So this will crash your program, even before the comparison happens.
+
+✅ What About Floating-Point Division?
+If you do:
+
+    double a = 10;
+    if (a / 0.0 == INFINITY)
+This does not crash.
+
+In floating-point math:
+10 / 0.0 results in +∞ (infinity).
+-10 / 0.0 results in -∞.
+0 / 0.0 results in NaN (Not a Number).
+These are part of the IEEE 754 standard for floating-point numbers.
+
+⚠️ Why is this dangerous?
+Even if it doesn't crash:
+ -You can't trust the output.
+ -The behavior can change between compiles, or when optimization is turned on.
+ -On one system it might "work", on another it might silently destroy your logic.
+*/
