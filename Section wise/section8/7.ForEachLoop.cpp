@@ -4,16 +4,10 @@ A for-each loop allows you to iterate directly over elements of a collection wit
 works on the basis of size of an array and nit on no. of elements initialized with
 
 📌 Syntax:
-cpp
-Copy
-Edit
 for (datatype element : collection) {
     // use element
 }
 ✅ Example 1: Basic For-Each with Array
-cpp
-Copy
-Edit
 #include <iostream>
 int main() {
     int A[5] = {10, 20, 30, 40, 50};

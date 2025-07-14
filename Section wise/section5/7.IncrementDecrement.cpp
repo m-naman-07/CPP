@@ -91,4 +91,13 @@ the compiler is free to do anything:
 	•	compiler warnings/errors
 	•	hard-to-debug crashes
 Fix: break into steps
+
+What should be used in for loop i++ or ++i ?
+Anyone can be used.
+++i; is known to be faster than i++;.
+Reason:
+i++; is same as i=i+1; here i+1 is evaluated and the result is
+stored in a temporary variable and then assigned to i.
+++i; here i+1 is not stored in a temporary variable, directly i is
+increased by 1 
 */

@@ -21,7 +21,6 @@ int main() {
     char x =127;
     x++;
     std::cout << (int)x << std::endl; //127 to -128
-
     
     return 0;
 }

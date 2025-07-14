@@ -2,7 +2,6 @@
 🔄 \n vs std::endl — What’s the Difference?
 
 ✅ 1. \n → Just a newline character
-        
         std::cout << "Hello\n";
 
     •	Simply inserts a newline.

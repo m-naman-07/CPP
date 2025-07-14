@@ -15,6 +15,7 @@ int main() {
 	•	Space ' '
 	•	Tab \t
 	•	Newline \n
+    •   '\r' (carriage return)
     Leaves the rest (like "world") in the input buffer
     Use getline() to read the whole line
     */
