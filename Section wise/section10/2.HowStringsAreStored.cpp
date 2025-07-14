@@ -92,7 +92,6 @@ char carr[] = "Hello";
         Stack:
         [ 'H' ][ 'e' ][ 'l' ][ 'l' ][ 'o' ][ '\0' ]
 
-
 std::string s = "Hello";
         Stack:
         [ size ][ capacity ][ pointer to heap ]
