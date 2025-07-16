@@ -254,6 +254,125 @@ Code Example:
         cout<<"Welcome, "<<s<<"\n";
     } 
 
+🧠 What is cin.getline()?
+cin.getline() is a standard input function in C++ used to read a line of text (including spaces) until:
+ - a newline character (\n) is encountered,
+ - or the maximum number of characters is reached.
+
+🧾 Syntax
+
+cin.getline(char* buffer, int size, char delimiter = '\n');
+
+Parameter	    Meaning
+buffer	        The character array where input is stored
+size	        Maximum characters to read (including '\0')
+delimiter	    Optional. Default is newline \n. Reading stops when
+                this is encountered.
+
+✅ Key Features
+Feature	                    Description
+Reads spaces	            Yes
+Stops at	                Delimiter or size-1 characters
+Adds null-terminator	    Always adds '\0' at the end
+Clears newline	            Consumes the \n (does not leave it in the 
+                            buffer)
+Prevents buffer overflow	Yes
+
+
+🔍 How It Works – Input Buffer View
+Imagine the user types:
+Hello World\n
+
+cin.getline(str, 20); will:
+ - Read "Hello World"
+ - Add a '\0' at the end of the string
+ - Remove \n from the buffer
+
+📘 Example 1: Basic cin.getline()
+Code:
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        char name[50];
+        cout << "Enter your full name: ";
+        cin.getline(name, 50);
+        cout << "You entered: " << name;
+        return 0;
+    }
+
+Input:
+John Watson
+
+Output:
+Enter your full name: John Watson
+You entered: John Watson
+
+📘 Example 2: With Custom Delimiter
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        char str[100];
+        cout << "Enter text (end with #): ";
+        cin.getline(str, 100, '#');
+        cout << "Text before #: " << str;
+    }
+
+Input:
+C++ is powerful# indeed
+
+Output:
+Text before #: C++ is powerful
+
+📘 Example 3: What Remains in the Buffer
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        char str1[20], str2[20];
+        cout << "Enter a sentence: ";
+        cin.getline(str1, 20); // reads first part
+        cout << "You entered: " << str1 << endl;
+
+        cout << "Enter again: ";
+        cin.getline(str2, 20); // reads rest
+        cout << "You entered again: " << str2 << endl;
+    }
+Input:
+This is a very long line that gets cut
+
+Output:
+You entered: This is a very long
+Enter again: line that gets cut
+You entered again: line that gets cut
+
+📌 The first getline stops after 19 chars, and consumes \n. Next line continues from the remaining buffer.
+
+🔁 Variants of cin.getline
+Variant	                                Usage
+cin.getline(buffer, size)	            Stops at \n (default)
+cin.getline(buffer, size, delimiter)	Stops at custom delimiter
+cin.get()	                            Reads a single character or
+                                        behaves like getline if used with args
+cin.get(buffer, size)	                Similar, but doesn't remove
+                                        newline from buffer
+
+🧩 Diagram of Input Handling
+Here’s a diagram showing what happens in the buffer:
+
+User Input (keyboard):
+   H  e  l  l  o     W  o  r  l  d  \n
+
+   cin.getline(str, 20);
+
+Buffer after reading:
+[H][e][l][l][o][ ][W][o][r][l][d][\0]
+                                  ↑
+                            Null terminator
+
+Input Buffer after getline:
+(empty)  ✅ '\n' is removed
 
 */
 
