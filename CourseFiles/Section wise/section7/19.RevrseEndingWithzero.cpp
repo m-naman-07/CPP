@@ -1,4 +1,4 @@
-/*
+/* ***********
 Reverse a number ending with zero.
 if a number is ending with 0 and you want 0 also then,
 Example : n=2500

@@ -1,4 +1,4 @@
-/*
+/*.  ********
 Display a number in words.
 if a number is ending with 0 and you want to display in words then,
 Example : n=2500
