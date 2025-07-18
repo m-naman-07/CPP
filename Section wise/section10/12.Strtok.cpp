@@ -1,4 +1,4 @@
-/*
+/*. *********************
 🔷 What is strtok?
 strtok is a function that helps you split a sentence (string) into words or tokens based on symbols like spaces, commas, or other characters.
 

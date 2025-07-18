@@ -65,13 +65,6 @@ Strings with different lengths	    Compared until mismatch or '\0'
 Non-ASCII characters (UTF-8 etc.)	Byte-by-byte comparison; might break
 
 
-🔹 Best Practices
-✅ Prefer std::string when possible.
-✅ Ensure strings are null-terminated.
-❌ Never compare uninitialized or nullptr strings.
-✅ Use strncmp for partial comparison.
-✅ Use strcasecmp or custom function for case-insensitive comparisons (POSIX).
-
 🔹 Real Use Case in Competitive Programming
     char str1[100], str2[100];
     cin >> str1 >> str2;

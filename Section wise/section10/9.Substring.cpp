@@ -3,7 +3,8 @@
 Function	Purpose
 strstr()	Find first occurrence of a substring in a string
 strchr()	Find first occurrence of a character
-strrchr()	Find last occurrence of a character
+strrchr()	Find last occurrence of a character(first occurence from 
+                                                right)
 
 All return a pointer to the first matching character in the original string, or nullptr if not found.
 
