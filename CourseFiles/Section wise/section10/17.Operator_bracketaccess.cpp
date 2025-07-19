@@ -85,6 +85,4 @@ Heap or internal buffer:
   s[0]   s[1]   s[2]
 
 [] directly accesses these memory locations without checking whether they're valid.
-
-
 */
