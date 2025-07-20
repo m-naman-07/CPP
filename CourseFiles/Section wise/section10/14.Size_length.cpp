@@ -1,4 +1,5 @@
 /*
+All Class string functions
 🔹length() / size()
 ✅ Description:
 Returns the number of characters in the string.
@@ -73,6 +74,4 @@ Heap:
 
 Length: 5 (excluding \0)
 Internally, C++ std::string manages memory automatically (may over-allocate for performance).
-
-
 */
