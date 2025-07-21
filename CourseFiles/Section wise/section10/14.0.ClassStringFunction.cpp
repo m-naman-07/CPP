@@ -47,15 +47,15 @@ Function	                Description
 
 🔹 4. String Operations
 Function	                Description
-compare(str)	            Compares strings (returns int)
+✅compare(str)	            Compares strings (returns int)
 ✅substr(pos, len)	        Returns substring
-copy(dest, len, pos)	    Copies substring into array
-find(str, pos)	            Finds substring from position
-rfind(str, pos)	            Finds last occurrence
-find_first_of(str, pos)	    Finds first char from set
-find_last_of(str, pos)	    Finds last char from set
-find_first_not_of(str)	    First char not in str
-find_last_not_of(str)	    Last char not in str
+✅copy(dest, len, pos)	    Copies substring into array
+✅find(str, pos)	            Finds substring from position
+✅rfind(str, pos)	            Finds last occurrence
+✅find_first_of(str, pos)	    Finds first char from set
+✅find_last_of(str, pos)	    Finds last char from set
+✅find_first_not_of(str)	    First char not in str
+✅find_last_not_of(str)	    Last char not in str
 starts_with(str)	        Checks if starts with str (C++20)
 ends_with(str)	            Checks if ends with str (C++20)
 contains(str)	            Checks if contains str (C++23)
@@ -69,12 +69,12 @@ Iterator Function	        Description
 
 🔹 6. Operator Overloads
 Operator	    Description
-+	            Concatenation
-+=	            Append
-==, !=	        Equality/Inequality
-<, >, <=, >=	Lexical comparison
+✅+	            Concatenation
+✅+=	            Append
+✅==, !=	        Equality/Inequality
+✅<, >, <=, >=	Lexical comparison
 ✅[]	            Character access
-<<, >>	        Stream insertion/extraction
+✅<<, >>	        Stream insertion/extraction
 
 🔹 7. Non-Member String Functions
 These are utility functions that work with std::string:
