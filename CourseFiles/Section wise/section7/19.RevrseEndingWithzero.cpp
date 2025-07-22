@@ -1,16 +1,23 @@
 /* ***********
-Reverse a number ending with zero.
-if a number is ending with 0 and you want 0 also then,
-Example : n=2500
-You have to store the reverse number in a string
-char reverse[10];
-int r,i=0;
-while(n>0)
-{
- r=n%10;
- reverse[i]=r+’0’; // ‘0’ is added to make a digit as character.
- n=n/10;
-}
-reverse[i]=‘\0’;
-cout<<reverse;
+Reverse a number
 */
+#include <iostream>
+
+int main(){
+    int n{};
+    char rev[10];
+    int i{};
+    int r{};
+
+    std::cout<<"Enter your no:"<<std::flush;
+    std::cin>>n;
+
+    while(n>0){
+        r=n%10;
+        rev[i]=r+'0';
+        n=n/10;
+        ++i;
+    }
+    rev[i]='\0';
+    std::cout<<rev<<std::endl;
+}

@@ -102,4 +102,69 @@ Legacy C libraries	                    char* with <cstring>
 Safe and modern string manipulation	    std::string
 Performance-critical, small input	    char[]
 C++ programs with dynamic string ops	std::string
+
+🔹 getline() vs cin.getline() in C++
+Feature	            std::getline()	                        cin.getline()
+Header	            <string>	                            <iostream>
+Works with	        std::string	                            C-style char[]
+Null-terminator	    Handled internally (in std::string)	    Adds '\0' to the 
+                                                            character array
+Buffer size	        Grows dynamically	                    Must specify buffer size
+Syntax	            std::getline(std::cin, str)	            std::cin.getline
+                                                                    (buffer, size)
+Use case	        Modern C++ strings	                    C-style char arrays
+
+🔹 What happens when you call std::getline() twice on the same std::string variable?
+Answer:
+The second call to std::getline() completely overwrites the previous contents of the string.
+It does not replace character-by-character — it replaces the entire value.
+
+🔸 What's Actually Happening:
+Each time you do:
+    std::getline(std::cin, str);
+
+It reads from input until a newline (\n) is encountered.
+The contents of str are cleared.
+Then, the new characters are inserted into str.
+So, even if str had something like "Lionel Messi" earlier, the second input will fully replace it.
+
+🔹 Example Program:
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string player;
+
+    std::cout << "Enter first player name: ";
+    std::getline(std::cin, player);
+    std::cout << "You entered: " << player << "\n";
+
+    std::cout << "Enter second player name: ";
+    std::getline(std::cin, player);
+    std::cout << "Now player is: " << player << "\n";
+
+    return 0;
+}
+
+🔹 Sample Input:
+Enter first player name: Lionel Messi
+Enter second player name: Cristiano Ronaldo
+
+🔹 Output:
+You entered: Lionel Messi
+Now player is: Cristiano Ronaldo
+✅ See? The second getline completely replaces the contents of player.
+
+🔸 Memory Behind the Scenes
+If you're wondering how the memory behaves, here's a simplified view:
+
+Before 2nd getline:
+player -> |L|i|o|n|e|l| |M|e|s|s|i|\0|
+
+After 2nd getline (new input: "Cristiano Ronaldo"):
+player -> |C|r|i|s|t|i|a|n|o| |R|o|n|a|l|d|o|\0|
+
+std::string automatically manages memory and grows/shrinks as needed.
+No leftover characters from the previous string.
+
 */

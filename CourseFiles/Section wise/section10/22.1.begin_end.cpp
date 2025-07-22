@@ -1,4 +1,50 @@
 /*
+🔹 Types of Iterators in std::string
+Iterator Type	        Purpose	                      Valid Syntax
+iterator	            Mutable forward iterator	  std::string::iterator it;
+const_iterator	        Read-only forward iterator	  std::string::const_iterator it;
+reverse_iterator	    Mutable reverse iterator	  std::string::reverse_iterator rit;
+const_reverse_iterator	Read-only reverse iterator    std::string::
+                                                      const_reverse_iterator rit;
+
+🔸 Declaration and Use Examples
+✅ 1. Basic iterator (Forward)
+    #include <iostream>
+    #include <string>
+
+    int main() {
+        std::string str = "Hello";
+
+        std::string::iterator it;
+        for (it = str.begin(); it != str.end(); ++it) {
+            std::cout << *it << ' ';
+        }
+    }
+
+Output:
+H e l l o
+
+✅ 2. const_iterator (Forward, Read-Only)
+    std::string::const_iterator cit;
+    for (cit = str.cbegin(); cit != str.cend(); ++cit) {
+        std::cout << *cit << ' ';
+    }
+
+✅ 3. reverse_iterator (Backward)
+    std::string::reverse_iterator rit;
+    for (rit = str.rbegin(); rit != str.rend(); ++rit) {
+        std::cout << *rit << ' ';
+    }
+
+Output:
+o l l e H
+
+✅ 4. const_reverse_iterator
+    std::string::const_reverse_iterator crit;
+    for (crit = str.crbegin(); crit != str.crend(); ++crit) {
+        std::cout << *crit << ' ';
+    }
+
 🔹 OVERVIEW
 Function	Purpose
 begin()	Returns an iterator to the first character of the string.
