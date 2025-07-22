@@ -1,5 +1,4 @@
 //program for finding length of a string using string iterator
-
 # include<iostream>
 #include<string>
 using namespace std;
