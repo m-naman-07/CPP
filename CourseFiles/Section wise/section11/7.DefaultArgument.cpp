@@ -124,9 +124,9 @@ report("Naman", "Pending", 21);      // name=Naman, status=Pending, age=21
     };
 
 🔷 12. ❗ Pitfalls to Avoid
-Pitfall	Explanation
-Providing defaults in both declaration & definition	❌ Not allowed
-Placing default in middle	❌ Compiler confusion
-Using overloading + default	Can cause ambiguity
-Default values as runtime variables	❌ Must be known at compile time
+Pitfall	                                                Explanation
+Providing defaults in both declaration & definition	    ❌ Not allowed
+Placing default in middle	                            ❌ Compiler confusion
+Using overloading + default	                            Can cause ambiguity
+Default values as runtime variables	                    ❌ Must be known at compile time
 */
