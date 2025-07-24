@@ -28,7 +28,7 @@ Feature	      Stack	                   Heap
 Size Limit	  Limited	               Large (depends on system)
 Allocation	  Automatically (static)   Manually (new)
 Deallocation  Automatic	               Manual (delete)
-Speed	      Faster	                  Slower
+Speed	      Faster	               Slower
 Scope	      Ends with function/block Until delete or program ends
 
 💡 Example: Dynamic Array
