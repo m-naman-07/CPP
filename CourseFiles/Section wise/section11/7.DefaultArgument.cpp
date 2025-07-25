@@ -129,4 +129,20 @@ Providing defaults in both declaration & definition	    ❌ Not allowed
 Placing default in middle	                            ❌ Compiler confusion
 Using overloading + default	                            Can cause ambiguity
 Default values as runtime variables	                    ❌ Must be known at compile time
+
+Program for function overloading sum of two integers:
 */
+# include<iostream>
+using namespace std;
+    
+int max(int a=0,int b=0, int c=0){
+	return a>b && a>c ? a:b>c? b:c;
+}
+int main()
+{
+	cout<<max()<<endl;
+	cout<<max(10)<<endl;
+	cout<<max(10,13)<<endl;
+	cout<<max(10,13,15)<<endl;
+	return 0;
+}

@@ -3,7 +3,7 @@
 A pointer is a variable that stores the memory address of another variable.
 
         int x = 10;
-        int* p = &x;  // 'p' stores the address of 'x'
+        int *p = &x;  // 'p' stores the address of 'x'
 
 - x is a normal integer.
  - &x means “address of x”.
@@ -12,7 +12,7 @@ A pointer is a variable that stores the memory address of another variable.
 
 🔹 Declaration Syntax
 
-        <data_type>* pointer_name;
+        <data_type> *pointer_name;
 
 Examples:
 
@@ -21,18 +21,14 @@ Examples:
         char* cptr;   // pointer to char
 
 🔹 Why Use Pointers?
-
  - Dynamic memory allocation (heap memory).
- - Efficient parameter passing to functions (especially large
-objects).
+ - Efficient parameter passing to functions (especially large objects).
  - Building data structures (linked lists, trees, graphs).
  - Direct hardware access or system-level programming.
  - Low-level operations and performance optimization.
 
 🔹 How Pointers Work (Internally)
-
 Every variable is stored at a memory address. A pointer holds that address.
-
         int a = 5;
         int* ptr = &a;
 
