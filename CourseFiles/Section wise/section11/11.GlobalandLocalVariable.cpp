@@ -64,7 +64,7 @@ Initialization	    Not auto-initialized                            Auto-initiali
         show();             // Output: 10
         cout << x << endl;  // Output: 50 (global)
     }
-
+        
 *****************************    
 🔎 Shadowing:
 When a local variable has the same name as a global, the local one hides the global inside its scope.

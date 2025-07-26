@@ -7,7 +7,6 @@
 •No function overloading (strict types only) Can lead to name clashes in C++ due to no namespace.
 Usage Style:C-style (sqrt(x))
 
-
 🔹 cmath (C++ version)
 •Wraps math.h in the std namespace
 •Adds function overloading (e.g., for float, long double)
