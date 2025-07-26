@@ -3,11 +3,9 @@ SHORT-CIRCUIT
 In C++, short-circuit evaluation refers to the way logical operators (&& and ||) evaluate expressions. It allows the program to stop evaluating further conditions as soon as the result is already determined.
 
 ✅ How Short-Circuiting Works:
-
 1. && (Logical AND) Operator:
 	•	Short-circuits (stops evaluating) when the left-hand operand is false.
 	•	Since false && anything is always false, the second operand doesn’t need to be checked.
-
 Example:
     if (false && (5 / 0 == 0)) {
         cout << "This won't print!";
@@ -17,7 +15,6 @@ Example:
 2. || (Logical OR) Operator:
 	•	Short-circuits (stops evaluating) when the left-hand operand is true.
 	•	Since true || anything is always true, the second operand doesn’t need to be checked.
-
 Example:
     if (true || (5 / 0 == 0)) {
         cout << "This will print!";
@@ -31,7 +28,6 @@ Example:
 	•	Short-circuiting helps you avoid undefined behavior, like dividing by zero or accessing invalid memory.
 
 Example of Short-Circuiting:
-
 Code with && (Logical AND):
     int a = 5, b = 0;
 
@@ -41,7 +37,7 @@ Code with && (Logical AND):
     else {
     cout << "b is zero, no division performed" << endl;
     }
-
+    
     Explanation:
 	    •	b != 0 is false.
 	    •	Because of short-circuiting, the second part a / b == 2 is not evaluated — thus avoiding a division by zero error.
