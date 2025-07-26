@@ -101,8 +101,10 @@ This is why local variables don’t persist between function calls.
 •Needs new and delete
 
 🚨 Example of Heap Use (with danger):
+Return by address:
     int* allocate() {
-        int* p = new int(42);  // memory from heap
+        int* p = new int(42);  // memory from heap 
+        //new int(42) is Direct Initialization
         return p;              // persists after function
     }
 
