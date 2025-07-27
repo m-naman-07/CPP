@@ -99,6 +99,4 @@ Modifiable?	        ❌ No	               ✅ Yes	               ✅ Yes
 Lifetime safety	    ✅ Safe	               ⚠️ Must manage	        ⚠️ Must manage
 Use for simple? 	✅ Yes	               ❌ Not needed	           ❌ Risky
 Example	            return x;	            return new int(x);	    return x; (if x&)
-
-
 */
