@@ -33,6 +33,7 @@ Linear Search is the simplest searching algorithm that checks each element one b
     		else
      		   cout << "Element not found.\n";
 		}
+			   
 🔁 Range-Based for Loop Version
 
 		#include <iostream>
