@@ -19,7 +19,10 @@ Just like a pointer to a variable holds the address of a variable, a pointer to 
 
     int main() {
         // Declare a pointer to function greet
-        void (*funcPtr)() = greet;
+        void (*funcPtr)();
+
+        //initialization of pointer using function
+        funcPtr=greet;
 
         // Call the function using pointer
         funcPtr();  // same as greet()
@@ -29,6 +32,40 @@ Just like a pointer to a variable holds the address of a variable, a pointer to 
 /*
 🧾 Output:
 Hello, Naman!
+
+✅ Now, For a Function with Parameters:
+Let’s say we have a function like this:
+
+    void greetWithName(string name, int times) {
+        for (int i = 0; i < times; ++i) {
+            cout << "Hello, " << name << "!" << endl;
+        }
+    }
+
+🧠 Step-by-step with Function Pointer:
+1. Declare a function pointer:
+    void (*funcPtr)(string, int);
+This means:
+•funcPtr is a pointer to a function that:
+•takes string and int as parameters
+•returns void
+
+2. Assign the function to the pointer:
+    funcPtr = greetWithName;
+
+Or, optionally:
+    funcPtr = &greetWithName;  // the & is optional
+
+3.Call the function via the pointer:
+    funcPtr("Naman", 3);  // behaves exactly like greetWithName("Naman", 3);
+
+Both funcPtr("Naman", 3); and (*funcPtr)("Naman", 3); are valid and equivalent in C++.
+🔍 Why?
+In C++, function pointers can be implicitly dereferenced. So:
+funcPtr("Naman", 3);
+...is interpreted by the compiler as:
+    (*funcPtr)("Naman", 3);
+The * is optional when calling the function through a pointer.
 
 🎯 Function Pointer with Parameters
     int add(int a, int b) {
@@ -84,4 +121,14 @@ Useful in switch-case-like logic (e.g., menu-driven programs):
 •Use std::function or lambdas for modern and flexible function pointers in C++11 and beyond.
 
 
+int x=9;   
+
+int main(){   
+int x=10;   
+cout<<x+::x;   
+}   
+
+What is the output?   
+output will be 
+x=10,::x=9   => 19
 */
