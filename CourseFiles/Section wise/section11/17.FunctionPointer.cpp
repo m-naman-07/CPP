@@ -120,7 +120,6 @@ Useful in switch-case-like logic (e.g., menu-driven programs):
 •You can’t point to non-static member functions using normal function pointers.
 •Use std::function or lambdas for modern and flexible function pointers in C++11 and beyond.
 
-
 int x=9;   
 
 int main(){   
