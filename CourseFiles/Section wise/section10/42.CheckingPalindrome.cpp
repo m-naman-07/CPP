@@ -35,7 +35,6 @@ int main(){
     }
 
 }
-
 /*
 When you write:
     rev[j] = str.rbegin()[i];
