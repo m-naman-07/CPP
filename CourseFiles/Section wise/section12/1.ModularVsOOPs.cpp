@@ -91,7 +91,6 @@ Large software systems	                Object-Oriented Programming
 Performance-critical tasks	            Modular, low-overhead
 Projects needing real-world modeling	OOP is ideal
 
-
 🔸 Forward-thinking advice:
 While modular programming is foundational and easier to grasp, learning OOP will open doors to frameworks, design patterns, and modern software engineering practices. For any serious software development — especially in C++, Java, or Python — OOP is essential.
 */

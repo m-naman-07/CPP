@@ -127,6 +127,7 @@ int x=10;
 cout<<x+::x;   
 }   
 
+
 What is the output?   
 output will be 
 x=10,::x=9   => 19
