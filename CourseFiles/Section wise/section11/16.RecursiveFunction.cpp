@@ -32,12 +32,15 @@ A recursive function must have:
         cout << "Factorial of " << num << " = " << factorial(num);
         return 0;
     }
+
+
 /*
 🧾 Output:
 Factorial of 5 = 120
 
 📘 Explanation:
 •factorial(5) calls factorial(4), and so on until factorial(1) which returns 1.
+
 
 🧮 Memory Behavior
 Each recursive call creates a new frame on the call stack with:
