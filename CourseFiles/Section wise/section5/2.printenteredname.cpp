@@ -14,7 +14,6 @@ int main() {
     // std::cin >> name;
     can't use this coz 
     cin >> reads only until the first whitespace
-
     That includes:
 	•	Space ' '
 	•	Tab \t
