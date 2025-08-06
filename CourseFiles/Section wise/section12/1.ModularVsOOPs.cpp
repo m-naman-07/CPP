@@ -2,7 +2,9 @@
 Modular Programming and Object-Oriented Programming (OOP) 
 
 🔹 1. Definition
-Modular Programming	Object-Oriented Programming (OOP)
+Modular Programming	
+Object-Oriented Programming (OOP)
+
 1.What it is
 •A design technique that breaks down a program into independent modules (functions/procedures).	
 •A paradigm based on the concept of objects that encapsulate data and behavior.
@@ -68,6 +70,7 @@ Reusability	        By copying/modifying functions	        Through inheritance
 Scalability	        Suitable for smaller/medium apps	    Best for large, scalable 
                                                             systems
 Maintainability	    Harder with growing code	            Easier due to encapsulation
+
 Code organization	Organized around functions	            Organized around real-world 
                                                             entities
 Security	        Less secure, no data hiding	            Strong encapsulation 
@@ -91,6 +94,4 @@ Large software systems	                Object-Oriented Programming
 Performance-critical tasks	            Modular, low-overhead
 Projects needing real-world modeling	OOP is ideal
 
-🔸 Forward-thinking advice:
-While modular programming is foundational and easier to grasp, learning OOP will open doors to frameworks, design patterns, and modern software engineering practices. For any serious software development — especially in C++, Java, or Python — OOP is essential.
 */

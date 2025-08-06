@@ -14,7 +14,6 @@ A recursive function must have:
             return recursive_case;
         }
     }
-
 ✅ Example 1: Factorial Using Recursion
 */
     #include <iostream>
