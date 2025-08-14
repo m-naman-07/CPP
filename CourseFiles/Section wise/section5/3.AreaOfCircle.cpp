@@ -1,3 +1,15 @@
+
+#include <iostream>
+
+int main() {
+    float r;
+    float area;
+    std::cout << "Enter radius" << std::endl;
+    std::cin >> r;
+    area=3.14f*r*r; 
+    std::cout<<"Area is :"<< area;
+    return 0;
+}
 /* 
     3.14 is treated as a double in C++.
     3.14f is treated as a float.
@@ -12,17 +24,7 @@
 	 Entire computation is done in float precision
 	 No implicit promotion to double → faster and more consistent
 */
-#include <iostream>
 
-int main() {
-    float r;
-    float area;
-    std::cout << "Enter radius" << std::endl;
-    std::cin >> r;
-    area=3.14f*r*r; 
-    std::cout<<"Area is :"<< area;
-    return 0;
-}
 /*
 if you write 22/7 answer will be wrong as 22/7 gives 3 
 so if you want to write 22/7 u have to use 

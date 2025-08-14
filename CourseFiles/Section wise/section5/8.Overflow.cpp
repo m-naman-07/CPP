@@ -15,11 +15,11 @@ number we should again find its two compliment
 int main() {
     
     char y =-128;
-    y--;
+    --y;
     std::cout << (int)y << std::endl; //-128 to 127
 
     char x =127;
-    x++;
+    ++x;
     std::cout << (int)x << std::endl; //127 to -128
     
     return 0;

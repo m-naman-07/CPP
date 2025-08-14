@@ -55,7 +55,7 @@ Post dec : x++;
              x=6
 
   post increment
-  y=x==;  -> y=5
+  y=x++;  -> y=5
              x=6
 */
 
@@ -90,7 +90,9 @@ the compiler is free to do anything:
 	•	compiler warnings/errors
 	•	hard-to-debug crashes
 Fix: break into steps
+*/
 
+/*
 What should be used in for loop i++ or ++i ?
 Anyone can be used.
 ++i; is known to be faster than i++;.

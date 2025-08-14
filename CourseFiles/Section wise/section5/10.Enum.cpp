@@ -22,3 +22,38 @@ Ex:
 •	Works with switch-case statements.
 •	Can restrict variables to only valid enum values.
 */
+#include <iostream>
+using namespace std;
+
+// Enum for traffic light colors
+enum TrafficLight { RED = 1, YELLOW, GREEN };
+
+void actionForLight(TrafficLight light) {
+    switch (light) {
+        case RED:
+            cout << "STOP! 🚫" << endl;
+            break;
+        case YELLOW:
+            cout << "Slow down! ⚠️" << endl;
+            break;
+        case GREEN:
+            cout << "Go! ✅" << endl;
+            break;
+        default:
+            cout << "Invalid traffic light!" << endl;
+    }
+}
+
+int main() {
+    TrafficLight currentLight = YELLOW;
+
+    cout << "Traffic light code: " << currentLight << endl;
+    actionForLight(currentLight);
+
+    return 0;
+}
+
+/*
+Traffic light code: 2
+Slow down! ⚠️
+*/

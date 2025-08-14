@@ -93,5 +93,4 @@ Small scripts or tools	                Modular Programming
 Large software systems	                Object-Oriented Programming
 Performance-critical tasks	            Modular, low-overhead
 Projects needing real-world modeling	OOP is ideal
-
 */
