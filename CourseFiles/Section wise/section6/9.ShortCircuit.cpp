@@ -23,44 +23,11 @@ Example:
 
 ✅ Why is Short-Circuiting Useful?
 	1.	Performance:
-	•	If the result can be determined early, the program doesn’t waste time evaluating further conditions.
-	2.	Avoiding Errors:
-	•	Short-circuiting helps you avoid undefined behavior, like dividing by zero or accessing invalid memory.
-
-Example of Short-Circuiting:
-Code with && (Logical AND):
-    int a = 5, b = 0;
-
-    if (b != 0 && a / b == 2) {
-        cout << "No error" << endl;
-    }
-    else {
-    cout << "b is zero, no division performed" << endl;
-    }
-    
-    Explanation:
-	    •	b != 0 is false.
-	    •	Because of short-circuiting, the second part a / b == 2 is not evaluated — thus avoiding a division by zero error.
-
-Code with || (Logical OR):
-    int a = 5, b = 0;
-
-    if (b == 0 || a / b == 2) {
-        cout << "b is zero, no division performed" << endl;
-    }
-    else {
-        cout << "No error" << endl;
-    }   
-
-    Explanation:
-	    •	b == 0 is true.
-	    •	Because of short-circuiting, the second part a / b == 2 is not evaluated, preventing the division by zero error.
-
-So basically:
-	•	Short-circuiting allows conditional expressions to stop evaluating as soon as the result is determined.
-	•	&& short-circuits if the left side is false.
-	•	|| short-circuits if the left side is true.
-	•	Useful for improving performance and avoiding errors.
+	•If the result can be determined early, the program doesn’t waste time evaluating  
+     further conditions.
+	2.Avoiding Errors:
+	•Short-circuiting helps you avoid undefined behavior, like dividing by zero or  
+     accessing invalid memory.
 */
 //Program to Demonstrate Short Circuit
 #include <iostream>
@@ -71,11 +38,11 @@ int main(){
     
     if(a>b && ++i<=b){
     }
-    std::cout<<i<<std::endl;
+    std::cout<<i<<std::endl;      // 6 will be printed as i was increased after check
     //as first condition was true so the second statement was checked in the above
     if(a>b || ++i<=b){
     }
-    std::cout<<i<<std::endl;
+    std::cout<<i<<std::endl;     //6 will be printed as 2nd condition was not checked
     //as first condition was true so the second statement was not checked in the above
 }
 
@@ -87,20 +54,15 @@ a / 0 is a division by zero, which is undefined behavior in C++.
 🔍 What will the compiler or runtime do?
 🖥️ If a is an int:
 The program will compile.
-
 But at runtime, when it executes a / 0, it will crash.
-
 You might get an error like:
-
     Floating point exception (core dumped)
 🚨 Division by zero in integer arithmetic is not allowed and causes a runtime error.
 
 ❗ Important Note:
 Even if it's inside an if condition, the expression:
-
     if (a / 0 == 2)
 still requires evaluating a / 0, which must be done before checking the condition.
-
 So this will crash your program, even before the comparison happens.
 
 ✅ What About Floating-Point Division?

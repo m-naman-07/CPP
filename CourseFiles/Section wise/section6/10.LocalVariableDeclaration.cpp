@@ -55,7 +55,7 @@ int main(){
         std::cout<<d<<std::endl;
     }
     }
-
+    //d=0;    can't be accessed here
 //declaration in condition
     if(int e=a*b){
         std::cout<<e<<std::endl;

@@ -72,13 +72,6 @@ Complex logic without parentheses	        Use brackets () to avoid precedence bu
 •Used in initializations, return values, inline display
 •Not suitable for multi-line or side-effect-heavy logic
 
-🔷 9. ✅ Best Practices
-Practice	                        Why
-Use for short logic	                Improves readability
-Use parentheses	Prevents            operator precedence errors
-Avoid nesting deeply	            Hard to debug
-Don’t replace complex if-else	    Makes code messy
-
 🔷 Example
 */
 #include <iostream>
@@ -94,8 +87,6 @@ int main() {
     cout << "You are: " << status << endl;
     return 0;
 }
-
-
 /*
 🔥 So, Which is Better?
 ✅ Use Ternary when:

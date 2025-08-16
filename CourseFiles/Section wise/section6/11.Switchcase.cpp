@@ -20,21 +20,46 @@ switch (expression) {
 */
 #include <iostream>
 
-int main() {
-    int x= 3;
+enum Day {
+    Monday = 1,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+};
 
-    switch (x) {
-        case 1:
-            std::cout << "Monday";
+int main() {
+    int input;
+    std::cout << "Enter the day number (1-7): ";
+    std::cin >> input;
+
+    switch (input) {          // directly use int
+        using enum Day;       // ✅ works with plain enum
+        case Monday:
+            std::cout << "Monday\n";
             break;
-        case 2:
-            std::cout << "Tuesday";
+        case Tuesday:
+            std::cout << "Tuesday\n";
             break;
-        case 3:
-            std::cout << "Wednesday";
+        case Wednesday:
+            std::cout << "Wednesday\n";
+            break;
+        case Thursday:
+            std::cout << "Thursday\n";
+            break;
+        case Friday:
+            std::cout << "Friday\n";
+            break;
+        case Saturday:
+            std::cout << "Saturday\n";
+            break;
+        case Sunday:
+            std::cout << "Sunday\n";
             break;
         default:
-            std::cout << "Invalid day";
+            std::cout << "Invalid day number\n";
     }
 
     return 0;
@@ -59,7 +84,8 @@ int main() {
 	•	Cleaner alternative to if-else for menu systems, day/week cases, options, etc.
 
 📌 Summary:
-	•	switch is a control structure used to test a variable against multiple constants.
+	•	switch is a control structure used to test a variable against multiple 
+        constants.
 	•	Avoids long if-else chains.
 	•	Make sure to use break unless you want fall-through. 
         fall-through(means executing next case also).

@@ -2,15 +2,12 @@
 🔄 \n vs std::endl — What’s the Difference?
 ✅ 1. \n → Just a newline character
         std::cout << "Hello\n";
-
     •	Simply inserts a newline.
 	•	Fast and efficient.
 	•	Doesn’t force any flushing of the output buffer.
 
 ⚠️ 2. std::endl → Newline plus flush
-
         std::cout << "Hello" << std::endl;
-
     •	Inserts a newline (\n)
 	•	Then flushes the output buffer (forces immediate output)
 	•	Slower than \n in loops or heavy output
@@ -20,7 +17,8 @@
     “Immediately force all buffered output to be written to the terminal.”
 
 	This is useful when:
-	    •	You’re debugging and want to ensure everything prints before a crash or freeze
+	    •	You’re debugging and want to ensure everything prints before a crash 
+		or freeze
 	    •	You want to see output instantly
 	    •	You’re waiting for user input next
 

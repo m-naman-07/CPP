@@ -13,9 +13,9 @@ Logical Operators are :
 and vice versa
 • The values of AND , OR depends on their truth values because
 they are logical
+
 && - AND 
 • In AND if one is FALSE everything is FALSE
 || - OR
 • In OR if one is TRUE everything is TRUE
-! - NOT 
 */
