@@ -1,10 +1,7 @@
 /*
 💡 What is a Perfect Number?
-
 A perfect number is a positive integer that is equal to the sum of all its proper divisors (excluding itself).
-
 ⸻
-
 🔹 Definition:
 A number n is perfect if:
 sum of divisors of n (excluding n) = n

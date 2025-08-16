@@ -15,7 +15,6 @@ int main(){
    
     return 0;
 }
-
 /*
 ===============================
         📘 For Loop Syntax
@@ -77,7 +76,7 @@ Now the loop runs as long as BOTH conditions are true.
 - Initialization → multiple allowed using commas ✅
 - Update        → multiple allowed using commas ✅
 - Condition     → must be a single boolean expression ❌
-                  (use && or || if you need multiple checks)
+                (use && or || if you need multiple checks)
 - Using comma in condition → only last expression counts ⚠️
 */
 

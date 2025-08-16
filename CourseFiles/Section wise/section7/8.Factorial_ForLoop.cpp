@@ -26,12 +26,6 @@
 	        Boost::multiprecision
 	    •Write your own with std::vector<int> and manual multiplication
 */
-
-/*
-	•	i starts at 1.
-	•	fact starts at 1 
-    (since factorial is a product).
-*/
 #include<iostream>
 
 int main(){
@@ -39,7 +33,10 @@ int main(){
     unsigned long long int fact{1};
     std::cout<<"Enter no. whose factorial is req.:";
     std::cin>>n;
-   
+    /*
+	•i starts at 1.
+	•fact starts at 1 (since factorial is a product).
+    */
     for( int i{1};i<=n;++i) 
     {
         fact*=i;
